@@ -129,7 +129,7 @@ function Node({ node, depth, exp, toggle, matches }) {
   );
 }
 
-export default function OrgChart() {
+function OrgChart() {
   const all = useMemo(() => flat(ORG), []);
   const [exp, setExp] = useState(() => {
     const s = new Set(["root"]);
